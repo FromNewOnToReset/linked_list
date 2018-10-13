@@ -50,10 +50,7 @@ public class LinkedNode {
             firstNode=node;
             size++;
         }
-        //插到尾
-        if(index==size+1){
-            setData(date);
-        }
+
         //中间
         if(index>1&&index<size+1){
             Node node=new Node(date);
@@ -68,6 +65,10 @@ public class LinkedNode {
             node.next=currentNode;
             prevCurrent.next=node;
             size++;
+        }
+        //插到尾
+        if(index==size+1){
+            setData(date);
         }
     }
 
