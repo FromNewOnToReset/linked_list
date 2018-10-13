@@ -7,6 +7,8 @@ public class main {
         System.out.println(linkedNode.getSize());
 
         linkedNode.insert(2,6);
+        linkedNode.insert(1,15);
+        linkedNode.insert(5,67);
         System.out.println(linkedNode.getSize());
         linkedNode.show();
 
